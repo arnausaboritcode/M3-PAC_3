@@ -3,6 +3,13 @@
  * Do not include SCSS code in this file.
  */
 
+ /**
+ * Import Tailwind
+ */
+
+@tailwind base;
+@tailwind components;
+
 /**
  * Import variables
  */
@@ -28,3 +35,9 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+/**
+* Import Tailwind
+*/
+
+@tailwind utilities;
