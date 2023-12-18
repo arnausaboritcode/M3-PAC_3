@@ -20,7 +20,7 @@
 
 */
 
-//Navbar link active class
+//Navbar active item appearance
 
 $(document).ready(function() {
   var currentPage = window.location.pathname.split('/').pop();

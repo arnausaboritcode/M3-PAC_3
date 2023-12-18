@@ -7,23 +7,13 @@ module.exports = {
       fontFamily: {
         'sans': ['"Cabin", sans-serif'],
       },
-      //General-footer and index and contact
       colors: {
-        'border_color': '#dee2e6',
+        'border_color': '#dee2e6', // Just in Contact page
         'default_green': '#68b02b',
       },
-
-      //Members page
-      backgroundImage: {
-        'member_one': "url('../images/member_one.svg')",
-        'member_two': "url('../images/member_two.svg')",
-        'member_three': "url('../images/member_three.svg')",
-        'member_four': "url('../images/member_four.svg')",
-        'member_five': "url('../images/member_five.svg')",
-        'member_six': "url('../images/member_six.svg')"
-      },
-      transitionTimingFunction: {
-        'ease-default': 'cubic-bezier(0.25, 0.1, 0.25, 1.0)', //default value for ease (in members.html)
+      boxShadow: {
+        'lg': '0px 0px 40px rgba(0, 0, 0, 0.1);',
+        'sm': '0 0 0 0.25rem #5c9c2640'
       },
       fontSize: {
         '4xl': ['2.5rem', {
@@ -35,14 +25,17 @@ module.exports = {
           fontWeight: '500'
         }],
       },
-      //Members page and Contact page (sm for focus contact)
-      boxShadow: {
-        'lg': '0px 0px 40px rgba(0, 0, 0, 0.1);',
-        'sm': '0 0 0 0.25rem #5c9c2640'
+      //Members page only
+      backgroundImage: {
+        'member_one': "url('../images/member_one.svg')",
+        'member_two': "url('../images/member_two.svg')",
+        'member_three': "url('../images/member_three.svg')",
+        'member_four': "url('../images/member_four.svg')",
+        'member_five': "url('../images/member_five.svg')",
+        'member_six': "url('../images/member_six.svg')"
       },
-      //Contact page
-      content: {
-        'after': '[""]',
+      transitionTimingFunction: {
+        'ease-default': 'cubic-bezier(0.25, 0.1, 0.25, 1.0)',
       },
     }
   },
