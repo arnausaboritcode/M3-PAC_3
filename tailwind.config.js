@@ -8,7 +8,7 @@ module.exports = {
         'sans': ['"Cabin", sans-serif'],
       },
       colors: {
-        'border_color': '#dee2e6', // Just in Contact page
+        'border_color': '#dee2e6', // Only in Contact page
         'default_green': '#68b02b',
       },
       boxShadow: {
