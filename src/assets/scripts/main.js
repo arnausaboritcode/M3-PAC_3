@@ -24,14 +24,15 @@
 
 $(document).ready(function() {
   var currentPage = window.location.pathname.split('/').pop();
-
   $('.nav a').removeClass('text-slate-600 text-default_green');
-
-  if (currentPage === 'index' || currentPage === '') {
-    $('.nav a[href="index"]').addClass('text-default_green');
-  } else {
-    $('.nav a[href="' + currentPage + '"]').addClass('text-default_green');
-  }
+  $('.nav a').each(function() {
+      if (this.hasAttribute('href')) {
+          var linkPage = this.href.split('/').pop();
+          if (currentPage === linkPage) {
+              $(this).addClass('text-default_green');
+          }
+      }
+  });
 });
 
 //Initialize Aos library
