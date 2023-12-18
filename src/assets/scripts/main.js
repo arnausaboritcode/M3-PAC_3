@@ -27,8 +27,8 @@ $(document).ready(function() {
 
   $('.nav a').removeClass('text-slate-600 text-default_green');
 
-  if (currentPage === 'index.html' || currentPage === '') {
-    $('.nav a[href="index.html"]').addClass('text-default_green');
+  if (currentPage === 'index' || currentPage === '') {
+    $('.nav a[href="index"]').addClass('text-default_green');
   } else {
     $('.nav a[href="' + currentPage + '"]').addClass('text-default_green');
   }
