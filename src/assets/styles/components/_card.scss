@@ -1,0 +1,5 @@
+@layer components {
+  .card-style {
+      @apply flex flex-col rounded-lg shadow-lg transition-transform duration-500 ease-ease-default hover:scale-110;
+  }
+}

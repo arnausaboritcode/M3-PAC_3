@@ -7,37 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <script defer src="../node_modules/aos/dist/aos.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Bestie Cup - Contact</title>
   </head>
 
-  <header class="fixed top-0 left-0 right-0 bg-slate-50 z-50"><!-- CUSTOMITZAR maxwidth. crec q no serveix per res-->
-    <div class="max-w-screen-xl ml-auto mr-auto px-4">
-        <nav class="flex flex-row justify-between items-center p-6">
-            <a href="index.html">
-                <img src="../src/assets/images/logo.svg" alt="Brand Logo" class="w-52"> <!-- CUSTOMITZAR width-->
-            </a>
-            <ul class="hidden lg:flex-row lg:flex">
-                <li class="px-2">
-                    <a href="index.html" class="text-slate-600 active:text-default_green hover:text-default_green">Members</a>
-                </li>
-                <li class="px-2">
-                    <a href="" class="text-default_green active:text-default_green hover:text-default_green">Contact</a>
-                </li>
-                <li class="px-2">
-                    <p class="text-slate-300">More Soon!</p>
-                </li>
-            </ul>
-            <div class="lg:hidden">
-                <button class="flex items-center px-4 py-3 border rounded">
-                    <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                </button>
-            </div>
-        </nav>
-    </div>
-  </header>
+  <include src="./views/main-nav.html"></include>
 
   <body>
 
@@ -46,8 +24,10 @@
         <p class="text-center">Thank you for giving us a chance</p>
     </div>
 
-    <div class="form-style">
-        <form action="post" name="contact" onsubmit="submit" class="relative z-10">
+    <div class="form-style" data-aos="fade-right" data-aos-duration="1000">
+        <form name="contact" method="POST" data-netlify="true" onSubmit="submit"
+        data-netlify-honeypot="bot-field" class="relative z-10">
+        <input class="hidden" name="bot-field">
             <div class="flex flex-wrap">
                 <div class="lg:flex-1 lg:mb-4 mb-8 flex-auto pr-6 pl-6 w-full">
                     <label id="name-label" for="name">Name</label>
@@ -63,17 +43,9 @@
                     <label id="age-label" for="age">Age <small>(optional)</small></label>
                     <input type="number" class="form-input-style" name="age" id="age" placeholder="Enter your Age" required>
                 </div>
-                <div class="lg:flex-1 lg:mb-4 mb-8 flex-auto pr-6 pl-6 w-full">
-                    <label>Current role</label>
-                    <select id="dropdown" class="form-input-style" name="role" required>
-                        <option disabled selected value>Select</option>
-                        <option value="student">Student</option>
-                        <option value="job">Full Time Job</option>
-                        <option value="learner">Full Time Learner</option>
-                        <option value="preferNo">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+
+                <include src="./views/form-select.html"></include>
+
             </div>
             <div class="flex flex-wrap">
                 <div class="lg:flex-1 lg:mb-4 mb-8 flex-auto pr-6 pl-6 w-full">
@@ -89,40 +61,10 @@
         </form>
     </div>
 
-<div class="max-w-6xl ml-auto mr-auto mt-12"> <!-- CUSTOMITZAR maxwidth-->
-    <footer class="flex flex-wrap justify-between items-center my-6 px-6 py-4 border-t border-solid border-border_color">
-        <a href="index.html">
-            <img src="../src/assets/images/logo.svg" alt="Brand Logo" class="w-36"> <!-- CUSTOMITZAR width-->
-        </a>
-        <ul class="flex flex-row border-b border-solid border-border_color">
-            <li class="px-2 pb-2">
-                <a href="index.html" class="text-slate-600 active:text-default_green hover:text-default_green">Members</a>
-            </li>
-            <li class="px-2 pb-2">
-                <a href="contact.html" class="text-default_green active:text-default_greenhover:text-default_green">Contact</a>
-            </li>
-        </ul>
-        <ul class="flex flex-row">
-            <li class="px-2">
-                <a href="#" class="text-slate-600">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-            <li class="px-2">
-                <a href="#" class="text-slate-600">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-            </li>
-            <li class="px-2">
-                <a href="#" class="text-slate-600">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-</div>
+    <include src="./views/footer.html"></include>
 
-<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    </body>
 </html>
 

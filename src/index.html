@@ -7,49 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <script defer src="../node_modules/aos/dist/aos.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Bestie Cup - Members</title>
   </head>
 
-  <header class="fixed top-0 left-0 right-0 bg-slate-50 z-50"><!-- CUSTOMITZAR maxwidth. crec q no serveix per res-->
-    <div class="max-w-screen-xl ml-auto mr-auto px-4">
-        <nav class="flex flex-row justify-between items-center p-6">
-            <a href="index.html">
-                <img src="../src/assets/images/logo.svg" alt="Brand Logo" class="w-52"> <!-- CUSTOMITZAR width-->
-            </a>
-            <ul class="hidden lg:flex-row lg:flex">
-                <li class="px-2">
-                    <a href="index.html" class="text-default_green active:text-default_green hover:text-default_green">Members</a>
-                </li>
-                <li class="px-2">
-                    <a href="contact.html" class="text-slate-600 active:text-default_green hover:text-default_green">Contact</a>
-                </li>
-                <li class="px-2">
-                    <p class="text-slate-300">More Soon!</p>
-                </li>
-            </ul>
-            <div class="lg:hidden">
-                <button class="flex items-center px-4 py-3 border rounded">
-                    <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                </button>
-            </div>
-        </nav>
-    </div>
-  </header>
+  <include src="./views/main-nav.html"></include>
 
   <body>
 
-    <div class="mb-12">
-        <h1 class="text-4xl text-center mb-6 mt-40">Tennis League <small class="text-3xl text-slate-600">Featured Members</small></h1>
-        <p class="text-center">Be the next Bestie Member</p>
-    </div>
+    <include src="./views/page-title.html"></include>
 
     <div class="flex justify-center items-center">
         <div class="flex flex-wrap justify-center items-center w-4/5"> <!-- wrapper -->
 
-            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3"> <!-- card -->
+            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3" data-aos="zoom-in" data-aos-duration="1000"> <!-- card -->
                 <div class="card-style"> <!-- card -->
                     <div class="bg-contain bg-center bg-no-repeat bg-member_one h-48"></div> <!-- card content image. CUSTOMITZAR url i treurela daqui-->
                     <div class="flex flex-col flex-auto p-4"> <!-- card content text-->
@@ -61,7 +36,7 @@
             </div>
 
 
-            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3"> <!-- card -->
+            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3" data-aos="zoom-in" data-aos-duration="1000"> <!-- card -->
                 <div class="card-style"> <!-- card content. CUSTOMITZAR rounded-lg de 8px a 10px i box shadow i transition-->
                     <div class="bg-contain bg-center bg-no-repeat bg-member_two h-48"></div> <!-- card content image. CUSTOMITZAR url i treurela daqui-->
                     <div class="flex flex-col flex-auto p-4"> <!-- card content text-->
@@ -72,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3"> <!-- card -->
+            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3" data-aos="zoom-in" data-aos-duration="1000"> <!-- card -->
                 <div class="card-style"> <!-- card content. CUSTOMITZAR rounded-lg de 8px a 10px i box shadow i transition-->
                     <div class="bg-contain bg-center bg-no-repeat bg-member_three h-48"></div> <!-- card content image. CUSTOMITZAR url i treurela daqui-->
                     <div class="flex flex-col flex-auto p-4"> <!-- card content text-->
@@ -83,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3"> <!-- card -->
+            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3" data-aos="zoom-in" data-aos-duration="1000"> <!-- card -->
                 <div class="card-style"> <!-- card content. CUSTOMITZAR rounded-lg de 8px a 10px i box shadow i transition-->
                     <div class="bg-contain bg-center bg-no-repeat bg-member_four h-48"></div> <!-- card content image. CUSTOMITZAR url i treurela daqui-->
                     <div class="flex flex-col flex-auto p-4"> <!-- card content text-->
@@ -94,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3"> <!-- card -->
+            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3" data-aos="zoom-in" data-aos-duration="1000"> <!-- card -->
                 <div class="card-style"> <!-- card content. CUSTOMITZAR rounded-lg de 8px a 10px i box shadow i transition-->
                     <div class="bg-contain bg-center bg-no-repeat bg-member_five h-48"></div> <!-- card content image. CUSTOMITZAR url i treurela daqui-->
                     <div class="flex flex-col flex-auto p-4"> <!-- card content text-->
@@ -105,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3"> <!-- card -->
+            <div class="flex p-4 mb-8 w-full md:w-1/2 lg:w-1/3" data-aos="zoom-in" data-aos-duration="1000"> <!-- card -->
                 <div class="card-style"> <!-- card content. CUSTOMITZAR rounded-lg de 8px a 10px i box shadow i transition-->
                     <div class="bg-contain bg-center bg-no-repeat bg-member_six h-48"></div> <!-- card content image. CUSTOMITZAR url i treurela daqui-->
                     <div class="flex flex-col flex-auto p-4"> <!-- card content text-->
@@ -119,41 +94,10 @@
         </div>
     </div>
 
-    <div class="max-w-6xl ml-auto mr-auto mt-12"> <!-- CUSTOMITZAR maxwidth-->
-        <footer class="flex flex-wrap justify-between items-center my-6 px-6 py-4 border-t border-solid border-border_color">
-            <a href="index.html">
-                <img src="../src/assets/images/logo.svg" alt="Brand Logo" class="w-36"> <!-- CUSTOMITZAR width-->
-            </a>
-            <ul class="flex flex-row border-b border-solid border-border_color">
-                <li class="px-2 pb-2">
-                    <a href="index.html" class="text-default_green active:text-default_green hover:text-default_green">Members</a>
-                </li>
-                <li class="px-2 pb-2">
-                    <a href="contact.html" class="text-slate-600 active:text-default_greenhover:text-default_green">Contact</a>
-                </li>
-            </ul>
-            <ul class="flex flex-row">
-                <li class="px-2">
-                    <a href="#" class="text-slate-600">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="px-2">
-                    <a href="#" class="text-slate-600">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="px-2">
-                    <a href="#" class="text-slate-600">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-    </div>
+    <include src="./views/footer.html"></include>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
 
-<!-- FER RPEGUNTES DE: Fa falta mateixos colors exactament i tot exactament?. Laltre es: On he de ficar declaracions @layer per apply? Dins main.scss? o creant nova carpeta components i ficantho adins?-->

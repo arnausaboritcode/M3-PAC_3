@@ -10,17 +10,12 @@
 @tailwind base;
 @tailwind components;
 
-@layer components {
-  .card-style {
-      @apply flex flex-col rounded-lg shadow-lg transition-transform duration-500 ease-ease-default hover:scale-110;
-  }
-  .form-style {
-    @apply w-4/5 max-w-screen-2xl relative rounded-xl bg-default_green shadow-lg px-32 py-40 my-24 mx-auto after:bg-white after:w-11/12 after:h-[calc(100%+60px)] after:left-0 after:right-0 after:mx-auto after:my-0 after:absolute after:-top-10 after:rounded-xl after:shadow-lg;
-  }
-  .form-input-style {
-    @apply py-4 px-3 rounded-xl border border-solid border-border_color w-full focus:outline-none focus:border-default_green focus:shadow-sm;
-  }
-}
+ /**
+ * Import Tailwind Components
+ */
+
+@import 'components/card';
+@import 'components/form';
 
 /**
  * Import variables
